@@ -84,3 +84,67 @@ Final: **28 unit tests passing**, `tsc` clean, `eslint` clean.
 ### Honest limits of the research view
 - n = 4. At p < 0.05, about 6 of 118 analytes are expected by chance; nothing survives FDR q < 0.1. The page says so.
 - Cardiovascular and cytokine panels show whole-panel drift at late timepoints, flagged as possible batch effects.
+
+---
+
+## Iteration 3 — AI copilot, live telemetry, lab panels
+
+### Added
+- **VITA Copilot**: `/api/copilot` runs a streaming tool loop on Claude Opus 5.5 (adaptive thinking, effort `medium`, server-side refusal fallback, prompt caching on the stable system prompt and tools). 9 tools reuse the same engine as the UI; inputs are validated with Zod before running. The browser sends the astronaut's own entries and drills so answers match the screen.
+- **Live monitor**: 250 Hz synthetic ECG (Gaussian PQRST, after ECGSYN), pleth and respiration; AR(1) RR generator tuned to each astronaut's HRV with respiratory sinus arrhythmia; detectors for tachy/brady, PVC, AF (nRMSSD screen) and desaturation; Web Bluetooth Heart Rate Service (0x180D / 0x2A37) with real RR intervals.
+- **Blood panel**: per-astronaut real CBC/CMP results at all 7 Inspiration4 draws.
+
+### Gates
+| Gate | Result |
+|---|---|
+| Unit tests | ✅ 60 passing (17 new: copilot tools, telemetry, BLE parsing) |
+| Generator reproduces target HR and RMSSD | ✅ HR 60–68 for target 64; RMSSD 35–70 for target 50 |
+| AF injected → detected, no PVC double-report | ✅ checked across 52 windows |
+| Copilot without a key | ✅ clear setup card, no crash |
+| Copilot with a key | ⚠️ not run: no API key on this machine |
+
+### Findings and fixes
+| # | Problem | Fix |
+|---|---|---|
+| 28 | Channel separators redrawn every frame built up into solid white lines | Static overlay elements |
+| 29 | During AF, random short-long intervals also triggered PVC alerts | Suppress ectopic alerts when the rhythm is irregular |
+| 30 | One isolated PVC pushed nRMSSD over the AF threshold, hiding the PVC | Remove ectopic short-long pairs before the AF screen, as clinical screens do |
+| 31 | Stray "… 2.ts" duplicate files in `.next` (iCloud Desktop sync) broke typechecking | Cleared the build cache; source tree verified clean |
+
+---
+
+## Iteration 4 — beyond dashboards: deep-space medicine, 3D emergencies, hardware-free vitals
+
+### Added
+- **Deep-space link** (`src/core/deepSpace.ts`, `/link`): Earth and Mars positions from JPL Horizons (2026-11-01 → 2030-01-01, 2-day step), mission plan in the real late-2026 window, transfer arc, light time, solar elongation, blackout detection, packet timing, NASA DSN Now parser and live route; R3F 3D solar system.
+- **Emergency engine** (`src/core/emergencies.ts`, `/sim`): five scenarios with physics/physiology, decisions with delays, consciousness and survival models, graded debriefs; R3F habitat with avatars and effects.
+- **rPPG + voice** (`src/core/rppg.ts`, `/scan`): resampling, band-pass, spectral peak with quality; autocorrelation pitch, variability, syllable rate, loudness, baseline comparison.
+- Copilot tools: `get_deep_space_link`, `get_emergency_science`.
+
+### Gates
+| Gate | Result |
+|---|---|
+| Ephemeris matches Horizons' own observer range | ✅ 11.3 min Earth–Mars one-way on 2026-11-10 (1.358 AU) |
+| Blackout found inside the surface stay | ✅ 13–30 Mar 2028, Sun within 0.81° |
+| Each scenario rewards good decisions | ✅ tested: shelter vs delay, masks/evacuate/hatch vs nothing, CPR+AED vs late shock, extinguish, LiOH |
+| rPPG recovers 54/72/96/128 bpm within 2 bpm from noisy jittery traces | ✅ |
+| Unit tests | ✅ 92 passing |
+| iPhone (iOS 16.2 simulator): playground, deep space, tab bar | ✅ |
+
+### Findings and fixes
+| # | Problem | Fix |
+|---|---|---|
+| 32 | Horizons JSON/CSV vector requests returned dates with no coordinates | Parse the default text format; km → AU |
+| 33 | Expected CO₂ to rise tens of mmHg/hour; physics says 0.38 mmHg/h (4 crew, 185 m³) | Kept the physics; the scenario became a realistic slow-burn emergency with a faster clock |
+| 34 | Cardiac survival docstring was garbled and the model approximate | Implemented Larsen 1993 exactly: 67% − 2.3%/min to CPR − 1.1%/min to shock − 2.1%/min to ALS |
+| 35 | "Finish tasks first" delayed shelter only 30 min, missing the proton peak | One-hour delay that runs through the peak |
+| 36 | Do-nothing hull breach left crew conscious after an hour: correct for a 2 cm hole (τ ≈ 82 min) | Scenario uses a 4 cm debris strike (τ ≈ 20 min) |
+| 37 | Simulation clock froze when the browser paused animation frames | Physics on a 20 Hz timer; 3D still renders on frames |
+| 38 | On iOS < 16.5, Tailwind v4's nested @supports translucent colors fell back to solid fills (unreadable red alarm bar) | Unlayered rgba equivalents for every translucent color in use |
+| 39 | Nine sections don't fit a five-tab bar | Crew · Live · Playground · Deep Space · More (sheet) |
+
+### Honest limits
+- The crew vehicle's path between planets is an approximate transfer arc, not a trajectory solution.
+- Emergency physiology is a teaching model calibrated to published numbers, not a validated medical simulator.
+- Camera heart rate and voice fatigue are experimental screening signals; validate against a sensor before acting.
+- Copilot still untested live: no API key on the build machine.

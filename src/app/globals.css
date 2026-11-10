@@ -199,3 +199,54 @@ input[type="number"]::-webkit-inner-spin-button {
     transform: rotate(360deg);
   }
 }
+
+/* iOS zooms the page when focusing a form field under 16px. Use 16px on touch screens. */
+@media (pointer: coarse) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Native-feeling taps on iOS: no grey flash, no callout on long-press of UI chrome. */
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*
+ * Tailwind v4 puts translucent colors in nested @supports rules, which Safari < 16.5 drops (falling back to the
+ * solid color). These unlayered rgba rules render identically everywhere and fix older iPhones.
+ */
+.bg-bg-2\/60 { background-color: rgba(12, 16, 23, 0.6); }
+.bg-bg-2\/70 { background-color: rgba(12, 16, 23, 0.7); }
+.bg-bg-2\/80 { background-color: rgba(12, 16, 23, 0.8); }
+.bg-bg-2\/95 { background-color: rgba(12, 16, 23, 0.95); }
+.bg-bg\/70 { background-color: rgba(7, 9, 13, 0.7); }
+.bg-bg\/80 { background-color: rgba(7, 9, 13, 0.8); }
+.bg-bg\/85 { background-color: rgba(7, 9, 13, 0.85); }
+.bg-bg\/90 { background-color: rgba(7, 9, 13, 0.9); }
+.bg-black\/40 { background-color: rgba(0, 0, 0, 0.4); }
+.bg-black\/60 { background-color: rgba(0, 0, 0, 0.6); }
+.bg-black\/70 { background-color: rgba(0, 0, 0, 0.7); }
+.bg-critical\/10 { background-color: rgba(255, 59, 92, 0.1); }
+.bg-critical\/15 { background-color: rgba(255, 59, 92, 0.15); }
+.bg-critical\/20 { background-color: rgba(255, 59, 92, 0.2); }
+.bg-critical\/5 { background-color: rgba(255, 59, 92, 0.05); }
+.bg-nominal\/10 { background-color: rgba(62, 214, 181, 0.1); }
+.bg-nominal\/20 { background-color: rgba(62, 214, 181, 0.2); }
+.bg-nominal\/30 { background-color: rgba(62, 214, 181, 0.3); }
+.bg-nominal\/5 { background-color: rgba(62, 214, 181, 0.05); }
+.bg-panel\/60 { background-color: rgba(16, 21, 30, 0.6); }
+.bg-panel\/90 { background-color: rgba(16, 21, 30, 0.9); }
+.bg-watch\/10 { background-color: rgba(245, 184, 61, 0.1); }
+.bg-white\/\[0\.06\] { background-color: rgba(255, 255, 255, 0.06); }
+.border-critical\/40 { border-color: rgba(255, 59, 92, 0.4); }
+.border-critical\/50 { border-color: rgba(255, 59, 92, 0.5); }
+.border-critical\/60 { border-color: rgba(255, 59, 92, 0.6); }
+.border-nominal\/50 { border-color: rgba(62, 214, 181, 0.5); }
+.border-nominal\/60 { border-color: rgba(62, 214, 181, 0.6); }
+.border-watch\/40 { border-color: rgba(245, 184, 61, 0.4); }
+.border-watch\/50 { border-color: rgba(245, 184, 61, 0.5); }
+.border-white\/10 { border-color: rgba(255, 255, 255, 0.1); }

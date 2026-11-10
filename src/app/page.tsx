@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowUpRight, FlaskConical, Gauge, Orbit, Radiation, Sparkles, Timer } from "lucide-react";
+import { ArrowUpRight, Box, FlaskConical, Gauge, Orbit, Radiation, Satellite, ScanFace, Sparkles, Timer } from "lucide-react";
 import { SpaceWeatherPanel } from "@/components/SpaceWeatherPanel";
 import { StatusDot, StatusPill } from "@/components/StatusPill";
 import { Sparkline } from "@/components/TrendChart";
@@ -60,6 +60,29 @@ export default function Overview() {
         <Telemetry icon={<Gauge size={13} />} label="Evacuation" text={e.evacuationDays} small />
         <Telemetry label="Open alerts" value={alerts} unit={`+ ${watches} watch`} color={alerts ? "var(--action)" : undefined} />
         <Telemetry label="Readings analysed" value={readingsLogged} />
+      </section>
+
+      <section className="rise mt-6 grid gap-4 md:grid-cols-3" style={{ animationDelay: "120ms" }}>
+        {[
+          { href: "/sim", tag: "3D · physics", title: "Emergency playground", text: "Walk into a 3D habitat and run a hull breach, fire, solar storm or cardiac arrest. Live physiology, graded debrief.", from: "#ff3b5c", icon: <Box size={18} /> },
+          { href: "/link", tag: "Live NASA DSN · JPL", title: "Medicine at light speed", text: "Real Earth–Mars light time, live Deep Space Network antennas, and the 2028 conjunction blackout.", from: "#3987e5", icon: <Satellite size={18} /> },
+          { href: "/scan", tag: "No hardware", title: "Vitals from a camera", text: "Heart rate from your face and fatigue from your voice, computed on-device when the medical kit fails.", from: "#3ed6b5", icon: <ScanFace size={18} /> },
+        ].map((c) => (
+          <Link key={c.href} href={c.href} className="panel group relative overflow-hidden p-5 transition hover:-translate-y-0.5 hover:border-line-2">
+            <div className="pointer-events-none absolute -top-16 -right-16 h-48 w-48 rounded-full opacity-25 blur-3xl transition group-hover:opacity-40" style={{ background: c.from }} />
+            <div className="flex items-center justify-between">
+              <span className="grid h-9 w-9 place-items-center rounded-xl" style={{ background: `color-mix(in srgb, ${c.from} 20%, transparent)`, color: c.from }}>
+                {c.icon}
+              </span>
+              <span className="font-data text-[10px] tracking-widest text-ink-3 uppercase">{c.tag}</span>
+            </div>
+            <h3 className="font-display mt-4 text-3xl font-extrabold uppercase">{c.title}</h3>
+            <p className="mt-2 text-sm text-ink-2">{c.text}</p>
+            <span className="font-data mt-4 inline-flex items-center gap-1 text-xs text-ink-3 group-hover:text-ink">
+              Open <ArrowUpRight size={12} />
+            </span>
+          </Link>
+        ))}
       </section>
 
       <section className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">

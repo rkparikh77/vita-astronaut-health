@@ -7,6 +7,7 @@ import { ArrowLeft, Stethoscope, TrendingDown, TrendingUp, UserRound, Satellite 
 import { BodyMap } from "@/components/BodyMap";
 import { ProtocolPanel } from "@/components/ProtocolPanel";
 import { TodayPanel } from "@/components/TodayPanel";
+import { LabPanel } from "@/components/LabPanel";
 import { DataBadge } from "@/components/viz";
 import { StatusDot, StatusPill } from "@/components/StatusPill";
 import { TrendChart } from "@/components/TrendChart";
@@ -76,6 +77,7 @@ function CrewView({ s }: { s: CrewState }) {
       </header>
 
       <TodayPanel s={s} />
+      <LabPanel osdrId={profile.osdrId} name={profile.name} />
 
       <div className="mt-6 grid gap-5 lg:grid-cols-[340px_1fr] xl:grid-cols-[340px_1fr_360px]">
         {/* Body map */}

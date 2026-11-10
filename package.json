@@ -8,21 +8,31 @@
     "start": "next start",
     "lint": "eslint",
     "data": "tsx scripts/fetch-osdr.ts",
-    "test": "vitest run"
+    "test": "vitest run",
+    "dev:phone": "next dev -H 0.0.0.0 -p 3000",
+    "ephemeris": "tsx scripts/fetch-ephemeris.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.7.0",
+    "@react-three/drei": "^10.0.6",
+    "@react-three/fiber": "^9.1.2",
     "lucide-react": "^0.468.0",
     "next": "15.5.29",
+    "qrcode": "^1.5.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "recharts": "^2.15.4"
+    "recharts": "^2.15.4",
+    "three": "^0.171.0",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/qrcode": "^1.5.5",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/three": "^0.171.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.29",
     "tailwindcss": "^4",

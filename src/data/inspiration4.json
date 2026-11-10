@@ -1,0 +1,6554 @@
+{
+ "source": [
+  {
+   "study": "OSD-569",
+   "panel": "CBC",
+   "title": "Complete blood count",
+   "file": "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv",
+   "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-569"
+  },
+  {
+   "study": "OSD-575",
+   "panel": "CMP",
+   "title": "Comprehensive metabolic panel",
+   "file": "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+   "url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-575"
+  }
+ ],
+ "mission": "SpaceX Inspiration4 (Sept 2021, 3-day orbital flight at ~585 km, 4 civilian crew)",
+ "fetchedAt": "2026-11-09T22:01:38.615Z",
+ "crew": [
+  {
+   "id": "C001",
+   "timepoints": [
+    {
+     "label": "L-92",
+     "day": -92,
+     "phase": "preflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 70,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 259,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2241,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 481,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 2349,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 1.3,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 4.8,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 42.5,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 14.1,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 41.5,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 30.8,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 33.2,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 92.8,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 8.9,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.3,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 43.5,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 241,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 13,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.58,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 5.4,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 5,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 2.2,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 51,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 15,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 15,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.7,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 9.7,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 23,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 104,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.24,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 85,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 73,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.3,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 83,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4.6,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.3,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 141,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 25,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "L-44",
+     "day": -44,
+     "phase": "preflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 50,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 204,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 1859,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 391,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 2998,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.9,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 3.7,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 45.1,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 14.9,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 33.8,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 30.7,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 33,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 93,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 7.1,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.6,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 54.5,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 237,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.6,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.85,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 5.5,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 5,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.9,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 46,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 16,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 18,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.9,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 10,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 26,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 101,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.1,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 98,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 85,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.7,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 80,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4.2,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.7,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 139,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 19,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "L-3",
+     "day": -3,
+     "phase": "preflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 49,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 161,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2667,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 553,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 3570,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.7,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 2.3,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 44.5,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 14.7,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 38.1,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 31.3,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 33,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 94.9,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 7.9,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.9,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 51,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 258,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.6,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.69,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 7,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.9,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 2,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 45,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 13,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 15,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 1,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "bun_to_creatinine_ratio": {
+       "value": 15,
+       "unit": "",
+       "min": 6,
+       "max": 22
+      },
+      "calcium": {
+       "value": 9.6,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 26,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 102,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.37,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 75,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 65,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.5,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 69,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3.9,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.4,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 142,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 20,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+1",
+     "day": 1,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 50,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 170,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 1640,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 455,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 2685,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 1,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 3.4,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 43.6,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 14.7,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 32.8,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 30.4,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 33.7,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 90.1,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 9.1,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.8,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 53.7,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 227,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.5,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.84,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 5,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.9,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.9,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 52,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 9,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 16,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 1.2,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 9.7,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 24,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 102,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.12,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 96,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 83,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.6,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 90,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4.4,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.5,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 138,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 18,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+45",
+     "day": 45,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 59,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 127,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2146,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 368,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 2200,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 1.2,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 2.6,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 43.3,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 14.3,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 43.8,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 30.9,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 33,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 93.5,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 7.5,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.5,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 44.9,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 228,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.8,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.63,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 4.9,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.9,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 2.1,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 46,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 11,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 13,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "calcium": {
+       "value": 9.6,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 28,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 100,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.11,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 97,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 84,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.3,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 84,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.2,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 138,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 15,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+82",
+     "day": 82,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 69,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 181,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2171,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 485,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 1994,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 1.4,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 3.7,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 46.1,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 15.7,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 44.3,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 31.3,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 34.1,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 91.8,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 9.9,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.8,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 40.7,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 257,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.3,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 5.02,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 4.9,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 5.1,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.9,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 49,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 15,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 16,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 1.2,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 10.1,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 27,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 101,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.25,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 84,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 73,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.7,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 91,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4.3,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.8,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 140,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 22,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+194",
+     "day": 194,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 49,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 221,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 1847,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 392,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 2391,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 1,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 4.5,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 41.8,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 14.1,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 37.7,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 30.3,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 33.7,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 89.7,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 8,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.5,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 48.8,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 214,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.8,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.66,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 4.9,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.6,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.9,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 50,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 15,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 12,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.8,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "bun_to_creatinine_ratio": {
+       "value": 22,
+       "unit": "",
+       "min": 6,
+       "max": 22
+      },
+      "calcium": {
+       "value": 9.4,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 23,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 102,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.29,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 80,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 69,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.4,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 87,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4.3,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 137,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 28,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "C002",
+   "timepoints": [
+    {
+     "label": "L-92",
+     "day": -92,
+     "phase": "preflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 33,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 280,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2119,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 364,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 3705,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.5,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 4.3,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 40.8,
+       "unit": "percent",
+       "min": 35,
+       "max": 45
+      },
+      "hemoglobin": {
+       "value": 13.2,
+       "unit": "percent",
+       "min": 11.7,
+       "max": 15.5
+      },
+      "lymphocytes": {
+       "value": 32.6,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 30.3,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mcv": {
+       "value": 93.6,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 5.6,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.1,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 57,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 241,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.7,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.36,
+       "unit": "million_per_microliter",
+       "min": 3.8,
+       "max": 5.1
+      },
+      "white_blood_cell_count": {
+       "value": 6.5,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.9,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.6,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 73,
+       "unit": "units_per_liter",
+       "min": 37,
+       "max": 153
+      },
+      "alt": {
+       "value": 16,
+       "unit": "units_per_liter",
+       "min": 6
+      },
+      "ast": {
+       "value": 19,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.5,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 10.2,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.4
+      },
+      "carbon_dioxide": {
+       "value": 23,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 103,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 0.83,
+       "unit": "milligram_per_deciliter",
+       "min": 0.5,
+       "max": 1.05
+      },
+      "egfr_african_american": {
+       "value": 95,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 82,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 3,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 69,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3.9,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.9,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 142,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 14,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "L-44",
+     "day": -44,
+     "phase": "preflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 32,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 211,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 1982,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 302,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 2873,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.6,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 3.9,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 37.8,
+       "unit": "percent",
+       "min": 35,
+       "max": 45
+      },
+      "hemoglobin": {
+       "value": 12.8,
+       "unit": "percent",
+       "min": 11.7,
+       "max": 15.5
+      },
+      "lymphocytes": {
+       "value": 36.7,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 32.6,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mcv": {
+       "value": 96.2,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 5.6,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.9,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 53.2,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 229,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.6,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 3.93,
+       "unit": "million_per_microliter",
+       "min": 3.8,
+       "max": 5.1
+      },
+      "white_blood_cell_count": {
+       "value": 5.4,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.6,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.5,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 78,
+       "unit": "units_per_liter",
+       "min": 37,
+       "max": 153
+      },
+      "alt": {
+       "value": 24,
+       "unit": "units_per_liter",
+       "min": 6
+      },
+      "ast": {
+       "value": 31,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.4,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 9.7,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.4
+      },
+      "carbon_dioxide": {
+       "value": 26,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 103,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 0.88,
+       "unit": "milligram_per_deciliter",
+       "min": 0.5,
+       "max": 1.05
+      },
+      "egfr_african_american": {
+       "value": 88,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 76,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 3,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 72,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.6,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 141,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 16,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "L-3",
+     "day": -3,
+     "phase": "preflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 29,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 151,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2873,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 446,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 3701,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.4,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 2.1,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 35.9,
+       "unit": "percent",
+       "min": 35,
+       "max": 45
+      },
+      "hemoglobin": {
+       "value": 11.5,
+       "unit": "percent",
+       "min": 11.7,
+       "max": 15.5
+      },
+      "lymphocytes": {
+       "value": 39.9,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 30.9,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mcv": {
+       "value": 96.5,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 6.2,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.8,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 51.4,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 241,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.1,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 3.72,
+       "unit": "million_per_microliter",
+       "min": 3.8,
+       "max": 5.1
+      },
+      "white_blood_cell_count": {
+       "value": 7.2,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.3,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.6,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 68,
+       "unit": "units_per_liter",
+       "min": 37,
+       "max": 153
+      },
+      "alt": {
+       "value": 19,
+       "unit": "units_per_liter",
+       "min": 6
+      },
+      "ast": {
+       "value": 40,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.3,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 9.3,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.4
+      },
+      "carbon_dioxide": {
+       "value": 24,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 106,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 0.96,
+       "unit": "milligram_per_deciliter",
+       "min": 0.5,
+       "max": 1.05
+      },
+      "egfr_african_american": {
+       "value": 79,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 68,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.7,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 78,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3.8,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 143,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 17,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+1",
+     "day": 1,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 39,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 160,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 1540,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 435,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 3328,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.7,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 2.9,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 36.4,
+       "unit": "percent",
+       "min": 35,
+       "max": 45
+      },
+      "hemoglobin": {
+       "value": 12.1,
+       "unit": "percent",
+       "min": 11.7,
+       "max": 15.5
+      },
+      "lymphocytes": {
+       "value": 28,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 30.1,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mcv": {
+       "value": 90.5,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 7.9,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.2,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 60.5,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 252,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 11.8,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.02,
+       "unit": "million_per_microliter",
+       "min": 3.8,
+       "max": 5.1
+      },
+      "white_blood_cell_count": {
+       "value": 5.5,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.4,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.5,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 71,
+       "unit": "units_per_liter",
+       "min": 37,
+       "max": 153
+      },
+      "alt": {
+       "value": 16,
+       "unit": "units_per_liter",
+       "min": 6
+      },
+      "ast": {
+       "value": 23,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.4,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 9.2,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.4
+      },
+      "carbon_dioxide": {
+       "value": 22,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 103,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 0.95,
+       "unit": "milligram_per_deciliter",
+       "min": 0.5,
+       "max": 1.05
+      },
+      "egfr_african_american": {
+       "value": 80,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 69,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 3,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 83,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3.5,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.4,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 137,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 20,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+45",
+     "day": 45,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 51,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 211,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2874,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 499,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 2765,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.8,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 3.3,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 37.1,
+       "unit": "percent",
+       "min": 35,
+       "max": 45
+      },
+      "hemoglobin": {
+       "value": 12.2,
+       "unit": "percent",
+       "min": 11.7,
+       "max": 15.5
+      },
+      "lymphocytes": {
+       "value": 44.9,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 30.3,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 32.9,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 92.3,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 7.8,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 11,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 43.2,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 252,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.02,
+       "unit": "million_per_microliter",
+       "min": 3.8,
+       "max": 5.1
+      },
+      "white_blood_cell_count": {
+       "value": 6.4,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.2,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.6,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 65,
+       "unit": "units_per_liter",
+       "min": 37,
+       "max": 153
+      },
+      "alt": {
+       "value": 14,
+       "unit": "units_per_liter",
+       "min": 6
+      },
+      "ast": {
+       "value": 17,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.5,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 9.3,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.4
+      },
+      "carbon_dioxide": {
+       "value": 21,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 104,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.02,
+       "unit": "milligram_per_deciliter",
+       "min": 0.5,
+       "max": 1.05
+      },
+      "egfr_african_american": {
+       "value": 74,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 64,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.6,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 44,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4.1,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 6.8,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 140,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 19,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+82",
+     "day": 82,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 32,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 90,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 1701,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 345,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 3132,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.6,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 1.7,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 34.7,
+       "unit": "percent",
+       "min": 35,
+       "max": 45
+      },
+      "hemoglobin": {
+       "value": 11.5,
+       "unit": "percent",
+       "min": 11.7,
+       "max": 15.5
+      },
+      "lymphocytes": {
+       "value": 32.1,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 29.9,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 33.1,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 90.4,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 6.5,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.5,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 59.1,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 245,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 11.9,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 3.84,
+       "unit": "million_per_microliter",
+       "min": 3.8,
+       "max": 5.1
+      },
+      "white_blood_cell_count": {
+       "value": 5.3,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.5,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.6,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 65,
+       "unit": "units_per_liter",
+       "min": 37,
+       "max": 153
+      },
+      "alt": {
+       "value": 17,
+       "unit": "units_per_liter",
+       "min": 6
+      },
+      "ast": {
+       "value": 21,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.5,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 9.7,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.4
+      },
+      "carbon_dioxide": {
+       "value": 25,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 105,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 0.82,
+       "unit": "milligram_per_deciliter",
+       "min": 0.5,
+       "max": 1.05
+      },
+      "egfr_african_american": {
+       "value": 96,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 83,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.8,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 77,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3.7,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.3,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 141,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 16,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+194",
+     "day": 194,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 19,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 166,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2573,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 518,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 3123,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.3,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 2.6,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 38.3,
+       "unit": "percent",
+       "min": 35,
+       "max": 45
+      },
+      "hemoglobin": {
+       "value": 12.7,
+       "unit": "percent",
+       "min": 11.7,
+       "max": 15.5
+      },
+      "lymphocytes": {
+       "value": 40.2,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 30.9,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 33.2,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "monocytes": {
+       "value": 8.1,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.8,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 48.8,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 243,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.1,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.11,
+       "unit": "million_per_microliter",
+       "min": 3.8,
+       "max": 5.1
+      },
+      "white_blood_cell_count": {
+       "value": 6.4,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.3,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.4,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 66,
+       "unit": "units_per_liter",
+       "min": 37,
+       "max": 153
+      },
+      "alt": {
+       "value": 17,
+       "unit": "units_per_liter",
+       "min": 6
+      },
+      "ast": {
+       "value": 24,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.3,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 9.5,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.4
+      },
+      "carbon_dioxide": {
+       "value": 20,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 104,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.02,
+       "unit": "milligram_per_deciliter",
+       "min": 0.5,
+       "max": 1.05
+      },
+      "egfr_african_american": {
+       "value": 73,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 63,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 3,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 84,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4.4,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.3,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 138,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 18,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "C003",
+   "timepoints": [
+    {
+     "label": "L-92",
+     "day": -92,
+     "phase": "preflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 125,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 614,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 6826,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 1997,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 10.1,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.4,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 1.3,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 40.7,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 13.2,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 20.8,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mchc": {
+       "value": 29.6,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 91.3,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 6.4,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 330,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 71.1,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 12.9,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 32.4,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.46,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 9.6,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.4,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.6,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 33,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 12,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 15,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.3,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 9.3,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 20,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 102,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 88,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 76,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.7,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 77,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3.7,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.1,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 139,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 17,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "L-44",
+     "day": -44,
+     "phase": "preflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 47,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 130,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2083,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 632,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 6408,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.5,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 1.4,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 42.6,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 14.4,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 22.4,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 31.2,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 33.8,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 92.2,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 6.8,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.3,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 68.9,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 345,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 13.2,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.62,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 9.3,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.9,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.3,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 41,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 13,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 17,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.4,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 10.3,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 21,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 99,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.03,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 85,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 73,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 3.9,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 62,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3.5,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 8.8,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 139,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 19,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "L-3",
+     "day": -3,
+     "phase": "preflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 49,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 88,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 3156,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 715,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 5792,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.5,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 0.9,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 41.6,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 13.3,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 32.2,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 29.6,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 32,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 92.4,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 7.3,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.8,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 59.1,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 367,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.5,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.5,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 9.8,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.2,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.6,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 31,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 13,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 13,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.2,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "bun_to_creatinine_ratio": {
+       "value": 24,
+       "unit": "",
+       "min": 6,
+       "max": 22
+      },
+      "calcium": {
+       "value": 9.5,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 23,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 101,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.08,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 80,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 69,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.6,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 75,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3.3,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 6.8,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 138,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 26,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+1",
+     "day": 1,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 28,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 140,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2086,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 658,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 4088,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.4,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 2,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 41.4,
+       "unit": "percent",
+       "min": 35,
+       "max": 45
+      },
+      "hemoglobin": {
+       "value": 13.5,
+       "unit": "percent",
+       "min": 11.7,
+       "max": 15.5
+      },
+      "lymphocytes": {
+       "value": 29.8,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 28.9,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 32.6,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 88.7,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 9.4,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.5,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 58.4,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 359,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.7,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.67,
+       "unit": "million_per_microliter",
+       "min": 3.8,
+       "max": 5.1
+      },
+      "white_blood_cell_count": {
+       "value": 7,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.2,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.4,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 41,
+       "unit": "units_per_liter",
+       "min": 31,
+       "max": 125
+      },
+      "alt": {
+       "value": 19,
+       "unit": "units_per_liter",
+       "min": 6
+      },
+      "ast": {
+       "value": 18,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.3,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 9.4,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.2
+      },
+      "carbon_dioxide": {
+       "value": 20,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 103,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 0.89,
+       "unit": "milligram_per_deciliter",
+       "min": 0.5,
+       "max": 1.1
+      },
+      "egfr_african_american": {
+       "value": 102,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 88,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.9,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 103,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.1,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 137,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 21,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+45",
+     "day": 45,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 62,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 117,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2379,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 624,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 4618,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.8,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 1.5,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 44.3,
+       "unit": "percent",
+       "min": 35,
+       "max": 45
+      },
+      "hemoglobin": {
+       "value": 14.6,
+       "unit": "percent",
+       "min": 11.7,
+       "max": 15.5
+      },
+      "lymphocytes": {
+       "value": 30.5,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 28.7,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 33,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 87,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 8,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.4,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 59.2,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 396,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.5,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 5.09,
+       "unit": "million_per_microliter",
+       "min": 3.8,
+       "max": 5.1
+      },
+      "white_blood_cell_count": {
+       "value": 7.8,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.5,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.6,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 51,
+       "unit": "units_per_liter",
+       "min": 31,
+       "max": 125
+      },
+      "alt": {
+       "value": 17,
+       "unit": "units_per_liter",
+       "min": 6
+      },
+      "ast": {
+       "value": 19,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.7,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 9.6,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.2
+      },
+      "carbon_dioxide": {
+       "value": 23,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 97,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 0.94,
+       "unit": "milligram_per_deciliter",
+       "min": 0.5,
+       "max": 1.1
+      },
+      "egfr_african_american": {
+       "value": 95,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 82,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.9,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 36,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4.4,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.4,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 136,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 19,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+82",
+     "day": 82,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 70,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 176,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 3247,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 730,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 4576,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.8,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 2,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 44.6,
+       "unit": "percent",
+       "min": 35,
+       "max": 45
+      },
+      "hemoglobin": {
+       "value": 14.4,
+       "unit": "percent",
+       "min": 11.7,
+       "max": 15.5
+      },
+      "lymphocytes": {
+       "value": 36.9,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 29.4,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 32.3,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 91.2,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 8.3,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.2,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 52,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 345,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.9,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.89,
+       "unit": "million_per_microliter",
+       "min": 3.8,
+       "max": 5.1
+      },
+      "white_blood_cell_count": {
+       "value": 8.8,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.8,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.8,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 50,
+       "unit": "units_per_liter",
+       "min": 31,
+       "max": 125
+      },
+      "alt": {
+       "value": 12,
+       "unit": "units_per_liter",
+       "min": 6
+      },
+      "ast": {
+       "value": 15,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.5,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 10,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.2
+      },
+      "carbon_dioxide": {
+       "value": 23,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 102,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 0.89,
+       "unit": "milligram_per_deciliter",
+       "min": 0.5,
+       "max": 1.1
+      },
+      "egfr_african_american": {
+       "value": 101,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 87,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.7,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 80,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3.7,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.5,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 138,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 23,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+194",
+     "day": 194,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 59,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 207,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2220,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 762,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 4151,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.8,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 2.8,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 40.4,
+       "unit": "percent",
+       "min": 35,
+       "max": 45
+      },
+      "hemoglobin": {
+       "value": 13.3,
+       "unit": "percent",
+       "min": 11.7,
+       "max": 15.5
+      },
+      "lymphocytes": {
+       "value": 30,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 28.7,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 32.9,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 87.1,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 10.3,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.2,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 56.1,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 185,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 13.1,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 4.64,
+       "unit": "million_per_microliter",
+       "min": 3.8,
+       "max": 5.1
+      },
+      "white_blood_cell_count": {
+       "value": 7.4,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.4,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.5,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 43,
+       "unit": "units_per_liter",
+       "min": 31,
+       "max": 125
+      },
+      "alt": {
+       "value": 10,
+       "unit": "units_per_liter",
+       "min": 6
+      },
+      "ast": {
+       "value": 15,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.3,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "bun_to_creatinine_ratio": {
+       "value": 25,
+       "unit": "",
+       "min": 6,
+       "max": 22
+      },
+      "calcium": {
+       "value": 9.6,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.2
+      },
+      "carbon_dioxide": {
+       "value": 22,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 101,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.1,
+       "unit": "milligram_per_deciliter",
+       "min": 0.5,
+       "max": 1.1
+      },
+      "egfr_african_american": {
+       "value": 78,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 67,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.9,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 73,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3.8,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.3,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 137,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 28,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "C004",
+   "timepoints": [
+    {
+     "label": "L-92",
+     "day": -92,
+     "phase": "preflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 77,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 200,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 1786,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 870,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 4766,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 1,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 2.6,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 49.1,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 17,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 23.2,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mchc": {
+       "value": 34.6,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 89.6,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 11.3,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 9.5,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 61.9,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 239,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.5,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 5.48,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 7.7,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.6,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.6,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 58,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 37,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 36,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.7,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 10,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 23,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 102,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.14,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 92,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 79,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.8,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 100,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4.2,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.4,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 138,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 22,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "L-44",
+     "day": -44,
+     "phase": "preflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 83,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 173,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 1613,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 832,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 3699,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 1.3,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 2.7,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 50,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 16.6,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 25.2,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 29.8,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 33.2,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 89.8,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 13,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 9.9,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 57.8,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 227,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.7,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 5.57,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 6.4,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.4,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.5,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 56,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 35,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 44,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.7,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 10.1,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 24,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 103,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.08,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 98,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 85,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.9,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 83,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4.2,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.3,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 140,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 19,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "L-3",
+     "day": -3,
+     "phase": "preflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 95,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 276,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2947,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 965,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 6318,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.9,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 2.6,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 49,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 16.8,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 27.8,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 31.1,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 34.3,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 90.7,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 9.1,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.1,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 59.6,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 295,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 13.3,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 5.4,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 10.6,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.6,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.7,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 55,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 37,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 39,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.5,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 10.2,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 24,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 103,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.13,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 92,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 80,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.7,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 56,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3.7,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.3,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 141,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 19,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+1",
+     "day": 1,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 89,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 300,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2155,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 1029,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 4528,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 1.1,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 3.7,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 48.3,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 16.5,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 26.6,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 29.7,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 34.2,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 87,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 12.7,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 55.9,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 240,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 13.2,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 5.55,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 8.1,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.5,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.6,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 62,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 40,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 48,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.4,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "bun_to_creatinine_ratio": {
+       "value": 23,
+       "unit": "",
+       "min": 6,
+       "max": 22
+      },
+      "calcium": {
+       "value": 9.8,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 23,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 105,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.15,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 90,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 78,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.9,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 97,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.4,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 140,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 26,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+45",
+     "day": 45,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 88,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 258,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 1938,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 898,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 3618,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 1.3,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 3.8,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 49,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 16.8,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 28.5,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 30.3,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 34.3,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 88.4,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 13.2,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 9.9,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 53.2,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 281,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.6,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 5.54,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 6.8,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.5,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.6,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 60,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 32,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 33,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.7,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 9.8,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 24,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 102,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.08,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 98,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 84,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.8,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 43,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 5.9,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.3,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 139,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 21,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+82",
+     "day": 82,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 47,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 269,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2307,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 916,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 4361,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 0.6,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 3.4,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 47.5,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 16.4,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 29.2,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 30.1,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 34.5,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 87.2,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 11.6,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 10.4,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 55.2,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 198,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 12.9,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 5.45,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 7.9,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.6,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.6,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 54,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 23,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 25,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 1,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "calcium": {
+       "value": 10,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 24,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 103,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.11,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 94,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 81,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.8,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 80,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 4.2,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.4,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 140,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 16,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    },
+    {
+     "label": "R+194",
+     "day": 194,
+     "phase": "postflight",
+     "labs": {
+      "absolute_basophils": {
+       "value": 100,
+       "unit": "cells_per_microliter",
+       "min": 0,
+       "max": 200
+      },
+      "absolute_eosinophils": {
+       "value": 374,
+       "unit": "cells_per_microliter",
+       "min": 15,
+       "max": 500
+      },
+      "absolute_lymphocytes": {
+       "value": 2639,
+       "unit": "cells_per_microliter",
+       "min": 850,
+       "max": 3900
+      },
+      "absolute_monocytes": {
+       "value": 988,
+       "unit": "cells_per_microliter",
+       "min": 200,
+       "max": 950
+      },
+      "absolute_neutrophils": {
+       "value": 4200,
+       "unit": "cells_per_microliter",
+       "min": 1500,
+       "max": 7800
+      },
+      "basophils": {
+       "value": 1.2,
+       "unit": "percent",
+       "min": 0,
+       "max": 2
+      },
+      "eosinophils": {
+       "value": 4.5,
+       "unit": "percent",
+       "min": 0,
+       "max": 8
+      },
+      "hematocrit": {
+       "value": 48,
+       "unit": "percent",
+       "min": 38.5,
+       "max": 50
+      },
+      "hemoglobin": {
+       "value": 16.5,
+       "unit": "percent",
+       "min": 13.2,
+       "max": 17.1
+      },
+      "lymphocytes": {
+       "value": 31.8,
+       "unit": "percent",
+       "min": 15,
+       "max": 49
+      },
+      "mch": {
+       "value": 29.6,
+       "unit": "picogram",
+       "min": 27,
+       "max": 33
+      },
+      "mchc": {
+       "value": 34.4,
+       "unit": "grams_per_deciliter",
+       "min": 32,
+       "max": 36
+      },
+      "mcv": {
+       "value": 86,
+       "unit": "femtoliter",
+       "min": 80,
+       "max": 100
+      },
+      "monocytes": {
+       "value": 11.9,
+       "unit": "percent",
+       "min": 0,
+       "max": 13
+      },
+      "mpv": {
+       "value": 9.8,
+       "unit": "femtoliter",
+       "min": 7.5,
+       "max": 12.5
+      },
+      "neutrophils": {
+       "value": 50.6,
+       "unit": "percent",
+       "min": 38,
+       "max": 80
+      },
+      "platelet_count": {
+       "value": 256,
+       "unit": "thousand_per_microliter",
+       "min": 140,
+       "max": 400
+      },
+      "rdw": {
+       "value": 13.1,
+       "unit": "percent",
+       "min": 11,
+       "max": 15
+      },
+      "red_blood_cell_count": {
+       "value": 5.58,
+       "unit": "million_per_microliter",
+       "min": 4.2,
+       "max": 5.8
+      },
+      "white_blood_cell_count": {
+       "value": 8.3,
+       "unit": "thousand_per_microliter",
+       "min": 3.8,
+       "max": 10.8
+      },
+      "albumin": {
+       "value": 4.3,
+       "unit": "gram_per_deciliter",
+       "min": 3.6,
+       "max": 5.1
+      },
+      "albumin_to_globulin_ratio": {
+       "value": 1.5,
+       "unit": "",
+       "min": 1,
+       "max": 2.5
+      },
+      "alkaline_phosphatase": {
+       "value": 57,
+       "unit": "units_per_liter",
+       "min": 36,
+       "max": 130
+      },
+      "alt": {
+       "value": 43,
+       "unit": "units_per_liter",
+       "min": 9
+      },
+      "ast": {
+       "value": 38,
+       "unit": "units_per_liter",
+       "min": 10
+      },
+      "total_bilirubin": {
+       "value": 0.5,
+       "unit": "milligram_per_deciliter",
+       "min": 0.2,
+       "max": 1.2
+      },
+      "bun_to_creatinine_ratio": {
+       "value": 21,
+       "unit": "",
+       "min": 6,
+       "max": 22
+      },
+      "calcium": {
+       "value": 9.8,
+       "unit": "milligram_per_deciliter",
+       "min": 8.6,
+       "max": 10.3
+      },
+      "carbon_dioxide": {
+       "value": 19,
+       "unit": "millimol_per_liter",
+       "min": 20,
+       "max": 32
+      },
+      "chloride": {
+       "value": 105,
+       "unit": "millimol_per_liter",
+       "min": 98,
+       "max": 110
+      },
+      "creatinine": {
+       "value": 1.31,
+       "unit": "milligram_per_deciliter",
+       "min": 0.6,
+       "max": 1.35
+      },
+      "egfr_african_american": {
+       "value": 77,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "egfr_non_african_american": {
+       "value": 67,
+       "unit": "milliliter_per_minute_per_1.73_meter_squared",
+       "min": 60,
+       "max": null
+      },
+      "globulin": {
+       "value": 2.9,
+       "unit": "gram_per_deciliter",
+       "min": 1.9,
+       "max": 3.7
+      },
+      "glucose": {
+       "value": 84,
+       "unit": "milligram_per_deciliter",
+       "min": 65,
+       "max": 99
+      },
+      "potassium": {
+       "value": 3.8,
+       "unit": "millimol_per_liter",
+       "min": 3.5,
+       "max": 5.3
+      },
+      "total_protein": {
+       "value": 7.2,
+       "unit": "gram_per_deciliter",
+       "min": 6.1,
+       "max": 8.1
+      },
+      "sodium": {
+       "value": 141,
+       "unit": "millimol_per_liter",
+       "min": 135,
+       "max": 146
+      },
+      "urea_nitrogen_bun": {
+       "value": 27,
+       "unit": "milligram_per_deciliter",
+       "min": 7,
+       "max": 25
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

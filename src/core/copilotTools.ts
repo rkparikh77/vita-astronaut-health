@@ -1,3 +1,4 @@
+import { checkDose, DRUG, MEDICAL, PHARMACY, shelfStatus } from "./medical";
 // Tools the VITA Copilot (Claude) can call. Pure functions over the same engine the UI uses,
 // so every number the assistant quotes is one the dashboard also shows.
 import { z } from "zod";
@@ -70,6 +71,7 @@ const crewId = z.enum(CREW.map((c) => c.id) as [string, ...string[]]);
 export const TOOL_SCHEMAS = {
   get_crew_overview: z.object({}),
   get_crew_member: z.object({ crew_id: crewId }),
+  check_medication: z.object({ crew_id: crewId, drug: z.enum(PHARMACY.map((d) => d.id) as [string, ...string[]]) }),
   get_indicator_history: z.object({ crew_id: crewId, indicator: z.string(), days: z.number().int().min(1).max(112).optional() }),
   get_indicator_reference: z.object({ indicator: z.string() }),
   get_research_stats: z.object({ query: z.string().optional(), timepoint: z.enum(["R+1", "R+45", "R+82", "R+194"]).optional(), limit: z.number().int().min(1).max(30).optional() }),
@@ -143,8 +145,17 @@ export const TOOL_DEFS: { name: ToolName; description: string; input_schema: Rec
     },
   },
   {
+    name: "check_medication",
+    description: "Safety check before giving a medicine from the onboard pharmacy to a crew member: allergies, interactions with their current medicines, condition cautions (e.g. hypertension), expiry and stock, plus safer alternatives when blocked. Demo rule set, not clinical.",
+    input_schema: {
+      type: "object",
+      properties: { crew_id: { type: "string", enum: ["vega", "okafor", "lindqvist", "tanaka"] }, drug: { type: "string", enum: PHARMACY.map((d) => d.id) } },
+      required: ["crew_id", "drug"],
+    },
+  },
+  {
     name: "get_space_weather",
-    description: "Live solar particle events and M/X-class flares from NASA DONKI for the last 30 days. Reports clearly if the feed is unreachable.",
+    description: "Live space weather: solar particle events and M/X-class flares from NASA DONKI (last 30 days), plus hourly L1 solar wind (speed, density, dynamic pressure, Bz) from NASA's Wind spacecraft via SPDF CDAWeb with a storm-driver level and shock detection. Each feed reports clearly if unreachable.",
     input_schema: { type: "object", properties: {} },
   },
   {
@@ -203,6 +214,8 @@ export async function runTool(name: string, rawInput: unknown, ctx: CopilotConte
       const labs = crewLabs(s.profile.osdrId);
       return {
         profile: { id, name: s.profile.name, role: s.profile.role, inspiration4Profile: s.profile.osdrId, priorCareerDoseMsv: s.profile.priorDoseMsv },
+        // Personal factors. Wellbeing check-ins are deliberately NOT included: they are private to the astronaut.
+        medicalProfile: MEDICAL[id],
         location: s.env.name,
         missionDay: MISSION.currentDay,
         overall: s.overall,
@@ -323,6 +336,15 @@ export async function runTool(name: string, rawInput: unknown, ctx: CopilotConte
       };
     }
 
+    case "check_medication": {
+      const id = input.crew_id as string;
+      const drug = DRUG[input.drug as string];
+      return {
+        drug: { name: drug.name, dose: drug.dose, use: drug.use, expires: drug.expires, shelf: shelfStatus(drug, MISSION.currentDay).status },
+        checks: checkDose(id, drug.id, MISSION.currentDay, []),
+        note: "Checked against the crew member's allergies, conditions and current medicines. Doses logged on this device are not visible to the server.",
+      };
+    }
     case "get_space_weather":
       return deps.spaceWeather ? await deps.spaceWeather() : { live: false, error: "space weather not available in this context" };
 
@@ -370,6 +392,7 @@ export async function runTool(name: string, rawInput: unknown, ctx: CopilotConte
 export const TOOL_LABELS: Record<ToolName, string> = {
   get_crew_overview: "Checked crew status",
   get_crew_member: "Read astronaut record",
+  check_medication: "Check a medication",
   get_indicator_history: "Pulled indicator history",
   get_indicator_reference: "Looked up indicator guidance",
   get_research_stats: "Queried Inspiration4 blood data",

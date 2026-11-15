@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { Activity, Box, Database, FlaskConical, MoreHorizontal, Radiation, Satellite, ScanFace, Sparkles, Users, X } from "lucide-react";
+import { Activity, Box, Database, FlaskConical, HeartHandshake, ListChecks, MoreHorizontal, Pill, Radiation, Satellite, ScanFace, Sparkles, Users, X } from "lucide-react";
 import { MISSION } from "@/core/crew";
 import { delayRange, ENVIRONMENTS, ENV_MAP, type EnvironmentId } from "@/core/environments";
 import { useMission } from "@/lib/store";
@@ -15,9 +15,12 @@ const NAV = [
   { href: "/sim", label: "Playground", icon: Box },
   { href: "/link", label: "Deep Space", icon: Satellite },
   { href: "/scan", label: "Scan", icon: ScanFace },
+  { href: "/checkin", label: "Check-in", icon: HeartHandshake },
+  { href: "/pharmacy", label: "Pharmacy", icon: Pill },
   { href: "/research", label: "Research", icon: FlaskConical },
   { href: "/atlas", label: "Atlas", icon: Sparkles },
   { href: "/radiation", label: "Radiation", icon: Radiation },
+  { href: "/coverage", label: "Coverage", icon: ListChecks },
   { href: "/about", label: "Data", icon: Database },
 ];
 const TABS = ["/", "/live", "/sim", "/link"];

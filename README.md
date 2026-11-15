@@ -22,6 +22,13 @@ know exactly what to do next and who to call, given how far they are from Earth.
 - **Body-in-space atlas**: 12 cited findings most people never hear about, and a mission projector up to a Mars round trip.
 - **Provenance on every chart**: Real data, Live feed, Model or Simulated.
 
+- **Onboard pharmacy**: every dose checked against the astronaut's allergies, conditions and current medicines; stock, side effects, and the shelf-life cliff (what expires before Earth return).
+- **Private wellbeing check-in**: PHQ-2 and GAD-2 screens, crew cohesion and workload, private by default with a consent ledger; only a flag is shared at a serious-risk threshold.
+- **Medical profiles**: allergies, conditions, medicines, dormant viruses and prior flights change how VITA reads each astronaut (e.g. a personal blood-pressure range for known hypertension).
+- **Real NASA vehicles and terrain**: ISS, Orion and a surface habitat from NASA 3D Resources; Jezero Crater from NASA Mars Trek.
+- **The Sun right now**: live SDO imagery and SPDF solar wind with shock detection, alongside DONKI.
+- **Requirements coverage**: every requirement in our design document traced to the feature that meets it (`/coverage`).
+
 - **Clickable body map**: 7 body systems, each colored by its worst indicator.
 - **21 health indicators** across NASA's five spaceflight hazards: vitals, HRV, glucose, sleep, mood, stress, reaction time, exercise, hydration, vision (SANS), body mass, blood counts, calcium, cabin CO₂.
 - **Three-signal assessment**: safety limits + personal baseline + trend projection.
@@ -39,6 +46,10 @@ know exactly what to do next and who to call, given how far they are from Earth.
 | NASA OSDR [OSD-575](https://osdr.nasa.gov/bio/repo/data/studies/OSD-575) | Inspiration4 metabolic panel (glucose, calcium, …) |
 | NASA OSDR [OSD-575](https://osdr.nasa.gov/bio/repo/data/studies/OSD-575) | 71-plex serum cytokines and 9-plex cardiovascular proteins |
 | [NASA DONKI](https://kauai.ccmc.gsfc.nasa.gov/DONKI/) | Live solar particle events and flares |
+| [NASA SPDF CDAWeb](https://cdaweb.gsfc.nasa.gov/) | Live L1 solar wind from the Wind spacecraft (speed, density, pressure, Bz) |
+| [NASA SDO](https://sdo.gsfc.nasa.gov/data/) | Latest full-disk Sun images (AIA 193/131/304 Å, HMI magnetogram) |
+| [NASA 3D Resources](https://github.com/nasa/NASA-3D-Resources) | ISS, Orion and Habitat Demonstration Unit models in the Playground |
+| [NASA Mars Trek](https://trek.nasa.gov/mars/) | Jezero Crater elevation (MOLA) and color (Viking MDIM 2.1) for the Mars base |
 | [NASA/JPL Horizons](https://ssd.jpl.nasa.gov/horizons/) | Earth and Mars positions 2026–2029 (light time, conjunction blackout) |
 | [NASA DSN Now](https://eyes.nasa.gov/dsn/dsn.html) | Live Deep Space Network antennas, targets, data rates, round-trip light time |
 | NASA-STD-3001, MSL RAD, Chang'e-4 LND, HRP evidence | Limits, dose rates, spaceflight effects |
@@ -49,9 +60,10 @@ know exactly what to do next and who to call, given how far they are from Earth.
 npm install
 echo 'ANTHROPIC_API_KEY=sk-ant-...' > .env.local   # enables VITA Copilot
 npm run dev        # http://localhost:3000
-npm test           # 92 unit tests: health engine, statistics, telemetry, deep-space link, emergencies, rPPG, copilot tools
+npm test           # 114 unit tests: health engine, statistics, telemetry, deep-space link, emergencies, rPPG, solar wind, pharmacy, wellbeing, coverage, copilot tools
 npm run data       # re-download OSDR data into src/data/inspiration4.json
 npm run ephemeris  # re-download Earth/Mars positions from JPL Horizons
+npm run assets     # re-download NASA 3D models and Mars Trek tiles into public/
 npm run build && npm start
 ```
 
@@ -88,5 +100,12 @@ src/components/  BodyMap, TrendChart, ProtocolPanel, ReactionTest, …
 scripts/         OSDR data pipeline
 docs/            PLAN.md (design + phased plan), EVALUATION.md (gates and fixes)
 ```
+
+## How it was built (use of AI)
+
+- **Idea and requirements:** written by the team (our requirements document is traced feature by feature on the `/coverage` page).
+- **Code:** much of the source was written with Claude (Anthropic) as an AI coding assistant, directed, reviewed and tested by the team. This README and the in-app Data page acknowledge it.
+- **In the app:** VITA Copilot uses Claude through tools that read VITA's own data.
+- **Images:** no AI-generated images or video. 3D models (NASA 3D Resources) and terrain (NASA Mars Trek) are NASA's.
 
 Not a medical device. Built as a hackathon prototype.

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>VITA demo deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root { --bg:#07090d; --panel:#0f141c; --line:#1f2733; --ink:#eef2f7; --ink2:#aab4c2; --ink3:#6b7686; --teal:#3ed6b5; --amber:#f5b83d; --red:#ff3b5c; }
+  @page { size: 1600px 900px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #000; font-family: Inter, Arial, sans-serif; color: var(--ink); }
+  .slide { width: 1600px; height: 900px; background: var(--bg); position: relative; overflow: hidden; page-break-after: always; padding: 72px 80px; }
+  .slide:last-child { page-break-after: auto; }
+  .grid-bg { position:absolute; inset:0; background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 64px 64px; opacity:.35; pointer-events:none; }
+  .kicker { font-family: "JetBrains Mono", monospace; font-size: 18px; letter-spacing: .22em; text-transform: uppercase; color: var(--ink3); }
+  h1, h2 { font-family: "Big Shoulders", Arial, sans-serif; font-weight: 800; text-transform: uppercase; line-height: .92; }
+  h1 { font-size: 150px; }
+  h2 { font-size: 64px; margin-top: 14px; }
+  h2 .dim, h1 .dim { color: #5f6b7c; }
+  p, li { font-size: 24px; line-height: 1.4; color: var(--ink2); }
+  .shot { border-radius: 18px; border: 1px solid #2a3442; box-shadow: 0 30px 80px rgba(0,0,0,.6); display:block; object-fit: cover; }
+  .stat { font-family: "Big Shoulders", Arial, sans-serif; font-weight: 800; font-size: 104px; line-height: .9; }
+  .lab { font-family: "JetBrains Mono", monospace; font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink3); margin-top: 10px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 26px 28px; }
+  .pill { display:inline-block; font-family: "JetBrains Mono", monospace; font-size: 14px; letter-spacing:.12em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; border: 1px solid; }
+  .foot { position:absolute; left:80px; bottom:34px; font-family: "JetBrains Mono", monospace; font-size: 14px; color: var(--ink3); letter-spacing:.1em; }
+  .num { position:absolute; right:80px; bottom:34px; font-family: "JetBrains Mono", monospace; font-size: 14px; color: var(--ink3); }
+  .ds { display:grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; margin-top: 30px; }
+  .ds div { font-size: 20px; color: var(--ink2); line-height:1.35; }
+  .ds b { color: var(--ink); font-weight: 600; display:block; font-size: 21px; }
+</style>
+</head>
+<body>
+
+<!-- 1 · Title -->
+<section class="slide">
+  <div class="grid-bg"></div>
+  <div style="position:relative; display:grid; grid-template-columns: 1fr 760px; gap: 56px; height:100%; align-items:center;">
+    <div>
+      <div class="kicker">NASA Space Apps 2026 · Philadelphia</div>
+      <h1 style="margin-top:22px">VITA</h1>
+      <p style="font-size:31px; color:var(--ink); margin-top:22px; line-height:1.3">On Mars, the doctor is 20 minutes away.<br/><span style="color:var(--teal)">VITA is the doctor already on board.</span></p>
+      <p style="margin-top:36px; font-size:22px">Challenge: <b style="color:var(--ink)">Create Health Monitoring Software for Astronauts on Space Missions</b></p>
+      <p style="margin-top:12px; font-size:22px">Team <b style="color:var(--ink)">[TEAM NAME]</b> · [Member 1] · [Member 2] · [Member 3] · [Member 4]</p>
+    </div>
+    <img class="shot" src="../screens/home.png" style="width:760px; height:475px; object-position: top left;" alt="VITA crew overview" />
+  </div>
+</section>
+
+<!-- 2 · Problem -->
+<section class="slide">
+  <div class="grid-bg"></div>
+  <div style="position:relative">
+    <div class="kicker">The problem</div>
+    <h2>Beyond the Moon, <span class="dim">Earth can't help in time</span></h2>
+    <p style="max-width:1150px; margin-top:22px">On the ISS, a sick astronaut can talk to a flight surgeon live and be home in hours. On a Mars mission none of that holds. NASA calls the answer <b style="color:var(--ink)">Earth-independent medical operations</b>: the crew has to detect, decide and treat on its own.</p>
+    <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 64px;">
+      <div class="card"><div class="stat" style="color:var(--amber)">20<span style="font-size:52px"> min</span></div><div class="lab">One-way message delay</div></div>
+      <div class="card"><div class="stat" style="color:var(--red)">17<span style="font-size:52px"> days</span></div><div class="lab">Radio blackout, Mar 2028</div></div>
+      <div class="card"><div class="stat" style="color:var(--amber)">1,008</div><div class="lab">Days with no resupply</div></div>
+      <div class="card"><div class="stat" style="color:var(--teal)">0</div><div class="lab">Evacuation options</div></div>
+    </div>
+    <p style="margin-top:36px; font-size:18px; color:var(--ink3)">Delay and blackout computed from real NASA/JPL Horizons planet positions for a Nov 2026 → Aug 2029 Mars mission.</p>
+  </div>
+  <div class="num">2 / 7</div>
+</section>
+
+<!-- 3 · User experience -->
+<section class="slide">
+  <div class="grid-bg"></div>
+  <div style="position:relative">
+    <div class="kicker">The user experience</div>
+    <h2>Knows each astronaut's normal. <span class="dim">Acts when it changes.</span></h2>
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px;">
+      <div>
+        <img class="shot" src="../screens/crew.png" style="width:100%; height:330px; object-position: top left;" alt="Crew member detail" />
+        <p style="margin-top:20px"><b style="color:var(--ink)">Flight-surgeon view.</b> Personal baselines from real crew bloodwork, three-signal alerts, allergies and conditions that change the warning ranges, escalation that knows the comms delay.</p>
+      </div>
+      <div>
+        <img class="shot" src="../screens/checkin.png" style="width:100%; height:330px; object-position: top left;" alt="Private wellbeing check-in" />
+        <p style="margin-top:20px"><b style="color:var(--ink)">Astronaut view.</b> Two-minute private check-in, camera heart-rate scan, live heart monitor, and an AI flight surgeon that answers when Earth can't.</p>
+      </div>
+    </div>
+  </div>
+  <div class="num">3 / 7</div>
+</section>
+
+<!-- 4 · Rehearse the worst day -->
+<section class="slide">
+  <div class="grid-bg"></div>
+  <div style="position:relative">
+    <div class="kicker">Emergency playground</div>
+    <h2>Rehearse the worst day <span class="dim">inside real NASA vehicles</span></h2>
+    <div style="display:grid; grid-template-columns: 1.35fr 1fr; gap: 28px; margin-top: 36px;">
+      <img class="shot" src="../screens/hull-breach.jpg" style="width:100%; height:470px; object-position: center 85%;" alt="Hull breach simulation" />
+      <div style="display:grid; grid-template-rows: 1fr 1fr; gap: 28px;">
+        <img class="shot" src="../screens/iss.png" style="width:100%; height:221px;" alt="NASA ISS model" />
+        <img class="shot" src="../screens/mars-base.png" style="width:100%; height:221px;" alt="Habitat on Jezero Crater terrain" />
+      </div>
+    </div>
+    <p style="margin-top:22px; font-size:21px">Hull breach, CO₂ build-up, fire, solar storm, cardiac arrest. Physics and physiology are computed live, Earth is minutes away, and a debrief grades every decision.</p>
+  </div>
+  <div class="num">4 / 7</div>
+</section>
+
+<!-- 5 · NASA data -->
+<section class="slide">
+  <div class="grid-bg"></div>
+  <div style="position:relative; display:grid; grid-template-columns: 1fr 600px; gap: 48px;">
+    <div>
+      <div class="kicker">NASA data makes it possible</div>
+      <h2>Eight NASA sources, <span class="dim">all doing real work</span></h2>
+      <div class="ds">
+        <div><b>OSDR OSD-569 / OSD-575</b>Inspiration4 crew bloodwork: personal baselines, 118-analyte research lab</div>
+        <div><b>JPL Horizons</b>Earth–Mars positions: message delay and the 2028 blackout</div>
+        <div><b>DSN Now</b>Live Deep Space Network antennas and data rates</div>
+        <div><b>DONKI</b>Live solar flares and particle events</div>
+        <div><b>SPDF CDAWeb (Wind)</b>Live solar wind with shock detection</div>
+        <div><b>SDO</b>The Sun right now, four channels</div>
+        <div><b>NASA 3D Resources</b>ISS, Orion and habitat models</div>
+        <div><b>Mars Trek</b>Jezero Crater elevation and color</div>
+      </div>
+    </div>
+    <div style="padding-top:20px">
+      <img class="shot" src="../screens/research.png" style="width:600px; height:375px; object-position: top left;" alt="Research lab" />
+      <div class="card" style="margin-top:24px">
+        <div class="lab" style="margin-top:0">Finding from real crew data</div>
+        <p style="color:var(--ink); margin-top:8px; font-size:23px">IL-6 rose <b style="color:var(--teal)">1.93×</b> in all 4 Inspiration4 crew the day after landing, and was back to baseline by R+82.</p>
+      </div>
+    </div>
+  </div>
+  <div class="num">5 / 7</div>
+</section>
+
+<!-- 6 · Validity -->
+<section class="slide">
+  <div class="grid-bg"></div>
+  <div style="position:relative">
+    <div class="kicker">Built on science, honest about limits</div>
+    <h2>Every requirement <span class="dim">traced to a feature</span></h2>
+    <div style="display:grid; grid-template-columns: 420px 1fr; gap: 44px; margin-top: 40px;">
+      <div style="display:grid; gap: 22px;">
+        <div class="card"><div class="stat" style="color:var(--teal)">26<span style="font-size:48px; color:var(--ink3)">/37</span></div><div class="lab">Requirements built</div><div class="lab" style="margin-top:4px">+5 partial</div></div>
+        <div class="card"><div class="stat">114</div><div class="lab">Automated tests passing</div></div>
+      </div>
+      <div>
+        <img class="shot" src="../screens/pharmacy.png" style="width:100%; height:330px; object-position: top left;" alt="Onboard pharmacy" />
+        <ul style="margin-top:22px; padding-left: 26px;">
+          <li>Statistics with false-discovery control; physics and survival models from cited papers</li>
+          <li>Every dose checked against allergies, interactions and conditions; shelf life tracked to Earth return</li>
+          <li>Labeled on every chart: real data, live feed, model, or simulated. Not a medical device.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="num">6 / 7</div>
+</section>
+
+<!-- 7 · Impact -->
+<section class="slide">
+  <div class="grid-bg"></div>
+  <div style="position:relative; display:grid; grid-template-columns: 1fr 700px; gap: 56px; height: 100%; align-items: center;">
+    <div>
+      <div class="kicker">Impact and what's next</div>
+      <h2>From Mars <span class="dim">to the edge of Earth</span></h2>
+      <p style="margin-top:26px">The same problem exists here: places where the specialist is far away and help is slow.</p>
+      <div style="display:grid; gap: 14px; margin-top: 26px;">
+        <div class="card" style="padding:18px 24px"><p><b style="color:var(--ink)">Space:</b> Artemis lunar crews, Gateway, the first Mars mission</p></div>
+        <div class="card" style="padding:18px 24px"><p><b style="color:var(--ink)">Earth:</b> Antarctic stations, submarines, ships, rural clinics</p></div>
+        <div class="card" style="padding:18px 24px"><p><b style="color:var(--ink)">Next:</b> real wearables, nutrition and injury logs, return-to-gravity checklist</p></div>
+      </div>
+    </div>
+    <div>
+      <img class="shot" src="../screens/sim-orion.jpg" style="width:700px; height:525px; object-position: center;" alt="VITA Playground with Orion" />
+      <p style="margin-top:22px; font-size:30px; color:var(--ink); font-family:'Big Shoulders', Arial, sans-serif; font-weight:800; text-transform:uppercase">VITA · the doctor already on board</p>
+    </div>
+  </div>
+  <div class="num">7 / 7</div>
+</section>
+
+</body>
+</html>

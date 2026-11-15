@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { CartesianGrid, Line, LineChart, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { ShieldAlert } from "lucide-react";
+import { SolarWindPanel } from "@/components/SolarWindPanel";
 import { SpaceWeatherPanel } from "@/components/SpaceWeatherPanel";
 import { StatusPill } from "@/components/StatusPill";
 import { CREW, MISSION } from "@/core/crew";
@@ -139,6 +140,10 @@ export default function RadiationPage() {
           </div>
         </div>
       </section>
+
+      <div className="mt-5">
+        <SolarWindPanel />
+      </div>
 
       <section className="mt-5 grid gap-5 lg:grid-cols-[1fr_1.4fr]">
         <SpaceWeatherPanel />

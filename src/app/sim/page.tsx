@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from "react";
 import { AlertTriangle, ArrowLeft, Clock, Pause, Play, RotateCcw, Sparkles, Trophy } from "lucide-react";
 import { DataBadge } from "@/components/viz";
 import { MISSION } from "@/core/crew";
+import { VEHICLES, vehicleFor, type VehicleKind } from "@/components/space/vehicles";
+import { useMission } from "@/lib/store";
 import { fmtDuration, linkAt, missionDate } from "@/core/deepSpace";
 import {
   act,
@@ -22,6 +24,11 @@ import {
 const Habitat3D = dynamic(() => import("@/components/sim/Habitat3D"), {
   ssr: false,
   loading: () => <div className="grid h-full place-items-center text-sm text-ink-3">Building the habitat…</div>,
+});
+
+const NasaVehicle3D = dynamic(() => import("@/components/space/NasaVehicle3D"), {
+  ssr: false,
+  loading: () => <div className="grid h-full place-items-center text-xs text-ink-3">Loading NASA model…</div>,
 });
 
 const ICON: Record<ScenarioId, string> = { sep: "☢", depress: "◌", co2: "CO₂", fire: "🜂", cardiac: "♥" };
@@ -127,6 +134,7 @@ export default function SimPage() {
             <div className="h-[440px] sm:h-[540px]">
               <Habitat3D s={sim} />
             </div>
+            <VehicleInset alarm={!sim.ended && !!lastAlarm} />
             <div className="pointer-events-none absolute right-3 bottom-3 left-3 flex flex-wrap gap-2">
               <Gauge label="Module A" value={`${h.pressureA.toFixed(1)} kPa`} bad={h.pressureA < 70} />
               <Gauge label="Module B" value={`${h.pressureB.toFixed(1)} kPa`} bad={h.pressureB < 70} />
@@ -301,22 +309,75 @@ function Gauge({ label, value, bad }: { label: string; value: string; bad?: bool
   );
 }
 
+function VehicleInset({ alarm }: { alarm: boolean }) {
+  const { env } = useMission();
+  const kind = vehicleFor(env);
+  return (
+    <div className="absolute top-3 right-3 hidden h-[150px] w-[210px] overflow-hidden rounded-xl border border-line-2 bg-black/70 shadow-lg sm:block">
+      <NasaVehicle3D kind={kind} alarm={alarm} interactive={false} />
+      <div className="font-data pointer-events-none absolute right-0 bottom-0 left-0 bg-gradient-to-t from-black/80 px-2 pt-4 pb-1.5 text-[9px] tracking-wider text-ink-2 uppercase">
+        Exterior · {VEHICLES[kind].label}
+      </div>
+    </div>
+  );
+}
+
+const VEHICLE_TABS: VehicleKind[] = ["iss", "orion", "mars_base"];
+
+function VehicleHero() {
+  const { env } = useMission();
+  const [kind, setKind] = useState<VehicleKind>(() => vehicleFor(env));
+  const v = VEHICLES[kind];
+  return (
+    <div className="panel ticks relative overflow-hidden p-0">
+      <div className="h-[300px] sm:h-[360px]">
+        <NasaVehicle3D kind={kind} />
+      </div>
+      <div className="absolute top-3 left-3 flex gap-1">
+        {VEHICLE_TABS.map((k) => (
+          <button
+            key={k}
+            type="button"
+            onClick={() => setKind(k)}
+            className={`font-data rounded-md px-2 py-1 text-[10px] tracking-wider uppercase backdrop-blur ${kind === k ? "bg-ink text-bg" : "border border-white/15 bg-black/50 text-ink-2 hover:text-ink"}`}
+          >
+            {k === "iss" ? "ISS" : k === "orion" ? "Orion" : "Mars base"}
+          </button>
+        ))}
+      </div>
+      <div className="pointer-events-none absolute right-0 bottom-0 left-0 bg-gradient-to-t from-black/85 px-4 pt-8 pb-3">
+        <div className="text-sm font-semibold">{v.label}</div>
+        <div className="text-xs text-ink-2">{v.note}</div>
+        <div className="font-data mt-1 text-[9px] tracking-wider text-ink-3 uppercase">{v.credit}</div>
+      </div>
+    </div>
+  );
+}
+
 function Picker({ onPick, oneWay }: { onPick: (id: ScenarioId) => void; oneWay: number }) {
   return (
     <div className="pt-8">
-      <div className="flex flex-wrap items-center gap-2">
-        <p className="panel-title">Emergency playground</p>
-        <DataBadge kind="model" />
+      <div className="grid items-center gap-6 lg:grid-cols-[1fr_minmax(0,560px)]">
+        <div>
+          <div className="flex flex-wrap items-center gap-2">
+            <p className="panel-title">Emergency playground</p>
+            <DataBadge kind="model" />
+          </div>
+          <h1 className="font-display mt-2 text-5xl font-extrabold uppercase leading-[0.9] sm:text-7xl">
+            Train for
+            <br />
+            <span className="text-ink-3">the worst day</span>
+          </h1>
+          <p className="mt-4 max-w-2xl text-ink-2">
+            Walk into a 3D Mars-transit habitat and run a real emergency. Physics and physiology are computed live: cabin pressure, CO₂, smoke,
+            radiation, oxygen saturation, survival odds. Earth is {fmtDuration(oneWay)} away, so you decide. A debrief scores every choice.
+          </p>
+          <p className="mt-3 max-w-2xl text-sm text-ink-3">
+            The vehicles are NASA&apos;s own 3D models, and the Mars base sits on real Jezero Crater terrain from NASA Mars Trek.
+          </p>
+        </div>
+        <VehicleHero />
       </div>
-      <h1 className="font-display mt-2 text-5xl font-extrabold uppercase leading-[0.9] sm:text-7xl">
-        Train for
-        <br />
-        <span className="text-ink-3">the worst day</span>
-      </h1>
-      <p className="mt-4 max-w-2xl text-ink-2">
-        Walk into a 3D Mars-transit habitat and run a real emergency. Physics and physiology are computed live: cabin pressure, CO₂, smoke,
-        radiation, oxygen saturation, survival odds. Earth is {fmtDuration(oneWay)} away, so you decide. A debrief scores every choice.
-      </p>
       <section className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {SCENARIOS.map((s, i) => (
           <button

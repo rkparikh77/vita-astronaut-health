@@ -7,6 +7,8 @@ import type { EnvironmentId } from "@/core/environments";
 import type { CompletionLog } from "@/core/gamification";
 import { classifyFlare, type SepEvent } from "@/core/radiation";
 import type { Reading } from "@/core/types";
+import type { DoseEntry } from "@/core/medical";
+import type { CheckIn } from "@/core/wellbeing";
 import { tasksForDay } from "@/core/protocol";
 import { countermeasures, odometer, readiness, sleep } from "@/core/scores";
 
@@ -16,9 +18,13 @@ interface Persisted {
   log: Record<string, CompletionLog>;
   drills: SepEvent[];
   bestPvt: Record<string, number>;
+  doses: DoseEntry[];
+  checkIns: CheckIn[];
+  /** Crew who asked for an earlier private conference, by crew id → mission day. */
+  conferenceRequests: Record<string, number>;
 }
 
-const DEFAULT: Persisted = { env: "mars_transit", entries: {}, log: {}, drills: [], bestPvt: {} };
+const DEFAULT: Persisted = { env: "mars_transit", entries: {}, log: {}, drills: [], bestPvt: {}, doses: [], checkIns: [], conferenceRequests: {} };
 const KEY = "vita.v1";
 
 interface Store extends Persisted {
@@ -28,6 +34,10 @@ interface Store extends Persisted {
   triggerDrill: (severity: SepEvent["severity"], sheltered: boolean) => void;
   clearDrills: () => void;
   reset: () => void;
+  logDose: (crewId: string, drugId: string) => void;
+  reportSideEffects: (index: number, effects: string[]) => void;
+  saveCheckIn: (c: CheckIn) => void;
+  requestConference: (crewId: string) => void;
   weather?: SpaceWeather;
   sepEvents: SepEvent[];
   hydrated: boolean;
@@ -98,6 +108,22 @@ export function MissionProvider({ children }: { children: React.ReactNode }) {
   );
   const clearDrills = useCallback(() => setState((s) => ({ ...s, drills: [] })), []);
   const reset = useCallback(() => setState({ ...DEFAULT }), []);
+  const logDose = useCallback(
+    (crewId: string, drugId: string) => setState((s) => ({ ...s, doses: [...s.doses, { crewId, drugId, day: today, at: new Date().toISOString() }] })),
+    [today],
+  );
+  const reportSideEffects = useCallback(
+    (index: number, effects: string[]) => setState((s) => ({ ...s, doses: s.doses.map((d, i) => (i === index ? { ...d, sideEffects: effects } : d)) })),
+    [],
+  );
+  const saveCheckIn = useCallback(
+    (c: CheckIn) => setState((s) => ({ ...s, checkIns: [...s.checkIns.filter((x) => !(x.crewId === c.crewId && x.day === c.day)), c] })),
+    [],
+  );
+  const requestConference = useCallback(
+    (crewId: string) => setState((s) => ({ ...s, conferenceRequests: { ...s.conferenceRequests, [crewId]: today } })),
+    [today],
+  );
 
   // Live DONKI events mapped onto mission days: "today" on the mission is today's date.
   const sepEvents = useMemo<SepEvent[]>(() => {
@@ -112,8 +138,8 @@ export function MissionProvider({ children }: { children: React.ReactNode }) {
   }, [weather, state.drills, today]);
 
   const value = useMemo<Store>(
-    () => ({ ...state, today, setEnv, record, triggerDrill, clearDrills, reset, weather, sepEvents, hydrated }),
-    [state, today, setEnv, record, triggerDrill, clearDrills, reset, weather, sepEvents, hydrated],
+    () => ({ ...state, today, setEnv, record, triggerDrill, clearDrills, reset, logDose, reportSideEffects, saveCheckIn, requestConference, weather, sepEvents, hydrated }),
+    [state, today, setEnv, record, triggerDrill, clearDrills, reset, logDose, reportSideEffects, saveCheckIn, requestConference, weather, sepEvents, hydrated],
   );
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }

@@ -10,7 +10,8 @@
     "data": "tsx scripts/fetch-osdr.ts",
     "test": "vitest run",
     "dev:phone": "next dev -H 0.0.0.0 -p 3000",
-    "ephemeris": "tsx scripts/fetch-ephemeris.ts"
+    "ephemeris": "tsx scripts/fetch-ephemeris.ts",
+    "assets": "tsx scripts/fetch-nasa-assets.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.7.0",

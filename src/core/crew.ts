@@ -4,6 +4,7 @@ import { ENV_MAP, type EnvironmentId, type MissionEnvironment } from "./environm
 import { INDICATORS, getIndicator, type Thresholds } from "./indicators";
 import { preflightBaseline, referenceRange, type CrewLabs } from "./osdr";
 import { doseTimeline, radiationStatus, windowDose, type SepEvent } from "./radiation";
+import { personalBpThresholds } from "./medical";
 import { simulate, type Scenario } from "./simulator";
 import { worst, type Reading, type Status } from "./types";
 
@@ -152,6 +153,8 @@ export function baselinesFor(p: CrewProfile): Record<string, number> {
 
 /** Lab thresholds tightened to the astronaut's own lab reference range where that range is stricter. */
 export function thresholdsFor(p: CrewProfile, indicatorId: string): Thresholds | undefined {
+  const personal = personalBpThresholds(p.id, indicatorId);
+  if (personal) return personal;
   const analyte = LAB_ANALYTE[indicatorId];
   const labs = crewLabs(p.osdrId);
   if (!analyte || !labs || indicatorId === "glucose") return undefined;

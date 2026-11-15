@@ -7,6 +7,10 @@ const PROVENANCE: { kind: Provenance; what: string; source: string; href?: strin
   { kind: "real", what: "Research lab: 118 blood analytes × 4 crew × 7 timepoints (3,300+ measurements), all statistics", source: "NASA OSDR OSD-569 & OSD-575, SpaceX Inspiration4", href: "https://osdr.nasa.gov/bio/repo/data/studies/OSD-575" },
   { kind: "real", what: "Each crew member's lab baselines: white cells, lymphocytes, hemoglobin, calcium, glucose and their lab reference ranges", source: "Inspiration4 preflight draws (L-92, L-44, L-3)", href: "https://osdr.nasa.gov/bio/repo/data/studies/OSD-569" },
   { kind: "live", what: "Solar particle events and M/X-class flares, last 30 days", source: "NASA DONKI (CCMC); refreshed every 30 min", href: "https://kauai.ccmc.gsfc.nasa.gov/DONKI/" },
+  { kind: "live", what: "Hourly solar wind at L1: speed, density, dynamic pressure, magnetic field Bz; storm-driver level and shock detection", source: "NASA Wind spacecraft (SWE + MFI) via NASA SPDF CDAWeb HAPI; refreshed every 30 min, about a day behind real time", href: "https://cdaweb.gsfc.nasa.gov/" },
+  { kind: "live", what: "Full-disk images of the Sun in four channels (corona, flares, chromosphere, magnetogram)", source: "NASA Solar Dynamics Observatory (AIA, HMI), latest images", href: "https://sdo.gsfc.nasa.gov/data/" },
+  { kind: "real", what: "Vehicle exteriors in the Playground: ISS, Orion, surface habitat", source: "NASA 3D Resources (ISS B, Orion Capsule, Habitat Demonstration Unit)", href: "https://github.com/nasa/NASA-3D-Resources" },
+  { kind: "real", what: "Mars base terrain: Jezero Crater elevation and color (relief exaggerated)", source: "NASA Mars Trek: MGS MOLA DEM and Viking MDIM 2.1 color mosaic tiles", href: "https://trek.nasa.gov/mars/" },
   { kind: "model", what: "Radiation dose, body odometer, mission projector, atlas", source: "MSL RAD, Chang'e-4 LND, ISS dosimetry, NASA-STD-3001, and the peer-reviewed studies cited on each card" },
   { kind: "sim", what: "Day-to-day in-flight vitals (heart rate, HRV, BP, sleep, mood…) and the four crew scenarios", source: "Seeded simulator on top of the real baselines, using published spaceflight effect sizes. Individual astronauts' daily in-flight vitals aren't publicly released (NASA LSDA restricts them), so this stands in for what a wearable would stream." },
 ];
@@ -52,6 +56,26 @@ export default function About() {
             ))}
           </tbody>
         </table>
+      </section>
+
+      <section className="panel ticks mt-6 p-6">
+        <h2 className="panel-title">How VITA was built · use of AI</h2>
+        <ul className="mt-3 space-y-2 text-sm text-ink-2">
+          <li>
+            <b className="text-ink">Idea and requirements: the team.</b> We wrote our own requirements document (what to monitor, how, and how the system responds)
+            before building; the <a href="/coverage" className="text-nominal hover:underline">Coverage page</a> traces each requirement to a feature.
+          </li>
+          <li>
+            <b className="text-ink">Code: AI-assisted.</b> Much of the source code was written with Claude (Anthropic) as a coding assistant, directed, reviewed and tested by the
+            team. Generated code is acknowledged here and in the README.
+          </li>
+          <li>
+            <b className="text-ink">In the app:</b> the VITA Copilot runs on Claude and answers only through tools that read VITA&apos;s own data. Its answers are labeled as AI.
+          </li>
+          <li>
+            <b className="text-ink">Images:</b> no AI-generated images or video. 3D models and terrain are NASA&apos;s; screenshots are of the app itself.
+          </li>
+        </ul>
       </section>
 
       <h2 className="font-display mt-12 text-4xl font-extrabold uppercase leading-[0.9]">How VITA decides</h2>

@@ -1,3 +1,6 @@
+import type { SolarWind } from "@/core/solarWind";
+import { fetchSolarWind } from "./solarWind";
+
 // NASA DONKI (Community Coordinated Modeling Center). Public, no key needed on this host.
 const DONKI = "https://kauai.ccmc.gsfc.nasa.gov/DONKI/WS/get";
 
@@ -18,6 +21,8 @@ export interface SpaceWeather {
   windowDays: number;
   events: SpaceWeatherEvent[];
   error?: string;
+  /** L1 solar wind from NASA SPDF (Wind). Independent of DONKI, so it can be live while DONKI is down. */
+  solarWind?: SolarWind;
 }
 
 function ymd(d: Date) {
@@ -25,7 +30,7 @@ function ymd(d: Date) {
 }
 
 async function getJson<T>(url: string): Promise<T> {
-  const res = await fetch(url, { signal: AbortSignal.timeout(8000), next: { revalidate } });
+  const res = await fetch(url, { signal: AbortSignal.timeout(5000), next: { revalidate } });
   if (!res.ok) throw new Error(`DONKI HTTP ${res.status}`);
   return (await res.json()) as T;
 }
@@ -45,8 +50,14 @@ interface DonkiFlr {
   link?: string;
 }
 
-/** Fetch the last 30 days of SEP events and M/X flares from NASA DONKI. Never throws. */
+/** DONKI events plus SPDF solar wind, fetched in parallel. Never throws. */
 export async function fetchSpaceWeather(): Promise<SpaceWeather> {
+  const [donki, solarWind] = await Promise.all([fetchDonki(), fetchSolarWind()]);
+  return { ...donki, solarWind };
+}
+
+/** Fetch the last 30 days of SEP events and M/X flares from NASA DONKI. Never throws. */
+async function fetchDonki(): Promise<SpaceWeather> {
   const windowDays = 30;
   const end = new Date();
   const start = new Date(end.getTime() - windowDays * 86400000);

@@ -61,6 +61,13 @@ describe("copilot tools", () => {
     expect(out[0].survivalIfShockedAt3min_withCprAt1min).toBeGreaterThan(50);
   });
 
+  it("medication check blocks an allergen and the crew record carries the medical profile", async () => {
+    const out = (await runTool("check_medication", { crew_id: "tanaka", drug: "ibuprofen" }, ctx)) as { checks: { severity: string }[] };
+    expect(out.checks.some((c) => c.severity === "block")).toBe(true);
+    const rec = (await runTool("get_crew_member", { crew_id: "tanaka" }, ctx)) as { medicalProfile: { allergies: string[] } };
+    expect(rec.medicalProfile.allergies).toContain("nsaid");
+  });
+
   it("space weather uses the injected fetcher", async () => {
     const out = await runTool("get_space_weather", {}, ctx, { spaceWeather: async () => ({ live: true, events: [] }) });
     expect(out).toEqual({ live: true, events: [] });

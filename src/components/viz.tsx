@@ -21,7 +21,7 @@ export type Provenance = "real" | "live" | "model" | "sim";
 
 const PROV: Record<Provenance, { label: string; color: string; tip: string }> = {
   real: { label: "Real data", color: "#3ed6b5", tip: "Measured values from NASA OSDR (Inspiration4 crew)." },
-  live: { label: "Live feed", color: "#7aa7ff", tip: "Fetched live from NASA DONKI." },
+  live: { label: "Live feed", color: "#7aa7ff", tip: "Fetched live from NASA (DONKI, SPDF, SDO, DSN)." },
   model: { label: "Model", color: "#c9b6ff", tip: "Calculated from published rates and the cited papers." },
   sim: { label: "Simulated", color: "#8a94a3", tip: "Simulated in-flight readings built on real baselines and published spaceflight effects." },
 };

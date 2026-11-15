@@ -119,6 +119,48 @@ VITA is a web app (works on desktop and phones, installable like an app) with tw
 - Kroenke et al. 2003 (PHQ-2) and 2007 (GAD-2)
 - ADA Standards of Care (glucose); AHA blood-pressure ranges
 
+### Form entries: "Space Agency Partner & Other Data" (Link Text → Link Url), all checked to resolve
+
+| Link Text | Link Url |
+|---|---|
+| NASA-STD-3001 Vol 1 Rev C: Crew Health | https://standards.nasa.gov/sites/default/files/standards/NASA/C//nasa-std-3001-vol-1-rev-c-signature.pdf |
+| NASA Human Research Program evidence reports (Human Research Roadmap) | https://humanresearchroadmap.nasa.gov/evidence/ |
+| Mason et al. 2024, Nature: SOMA / Inspiration4 | https://doi.org/10.1038/s41586-024-07639-y |
+| Trudel et al. 2022, Nature Medicine: space anemia | https://doi.org/10.1038/s41591-021-01637-7 |
+| Garrett-Bakelman et al. 2019, Science: NASA Twins Study | https://doi.org/10.1126/science.aau8650 |
+| Crucian et al. 2018, Frontiers in Immunology: immune dysregulation | https://doi.org/10.3389/fimmu.2018.01437 |
+| Trappe et al. 2009, J Appl Physiol: skeletal muscle on the ISS | https://doi.org/10.1152/japplphysiol.91578.2008 |
+| Gabel et al. 2022, Scientific Reports: bone loss | https://doi.org/10.1038/s41598-022-13461-1 |
+| Chang et al. 2016, Spine: spinal muscle changes | https://doi.org/10.1097/BRS.0000000000001873 |
+| Lee et al. 2020, npj Microgravity: SANS | https://doi.org/10.1038/s41526-020-0097-9 |
+| Marshall-Goebel et al. 2019, JAMA Network Open: venous flow | https://doi.org/10.1001/jamanetworkopen.2019.15011 |
+| Barger et al. 2014, Lancet Neurology: sleep in spaceflight | https://doi.org/10.1016/S1474-4422(14)70122-X |
+| Basner et al. 2015: NASA Cognition test battery (PVT) | https://doi.org/10.3357/AMHP.4165.2015 |
+| Stahn et al. 2017, Scientific Reports: body temperature | https://doi.org/10.1038/s41598-017-15560-w |
+| Zeitlin et al. 2013, Science: MSL RAD cruise radiation dose | https://doi.org/10.1126/science.1235989 |
+| Larsen et al. 1993, Ann Emerg Med: cardiac-arrest survival | https://doi.org/10.1016/S0196-0644(05)81040-6 |
+| Du et al. 2011, AAPS Journal: medicines flown in space | https://doi.org/10.1208/s12248-011-9270-0 |
+| Kroenke et al. 2003: PHQ-2 depression screen | https://doi.org/10.1097/01.MLR.0000093487.78664.3C |
+| Spitzer/Kroenke et al. 2007: GAD-2 anxiety screen | https://doi.org/10.7326/0003-4819-146-5-200703060-00004 |
+| Next.js | https://nextjs.org |
+| React | https://react.dev |
+| Tailwind CSS | https://tailwindcss.com |
+| Three.js | https://threejs.org |
+| React Three Fiber | https://github.com/pmndrs/react-three-fiber |
+| drei (React Three helpers) | https://github.com/pmndrs/drei |
+| Recharts | https://recharts.org |
+| Lucide icons | https://lucide.dev |
+| Zod | https://zod.dev |
+| node-qrcode | https://github.com/soldair/node-qrcode |
+| Vitest | https://vitest.dev |
+| tsx | https://tsx.is |
+| Anthropic Claude API (VITA Copilot + AI coding assistant) | https://www.anthropic.com/api |
+| Anthropic TypeScript SDK | https://github.com/anthropics/anthropic-sdk-typescript |
+| Big Shoulders font (SIL OFL) | https://fonts.google.com/specimen/Big+Shoulders |
+| Inter font (SIL OFL) | https://fonts.google.com/specimen/Inter |
+| JetBrains Mono font (SIL OFL) | https://fonts.google.com/specimen/JetBrains+Mono |
+| Vercel (hosting) | https://vercel.com |
+
 ---
 
 ## 8b. Publishing the app (Final Project link)

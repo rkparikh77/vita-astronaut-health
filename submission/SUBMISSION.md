@@ -5,7 +5,9 @@ Where: spaceappschallenge.org → profile icon → **My Team** → **Project** t
 
 Team **Quakernauts**: Rahil Parikh, Lana Atiya, Jahnavi Prudhivi, Cynthia Zhang, Joshua Wu.
 
-Fill in everything in `[BRACKETS]` before pasting.
+**Final links (tested logged out, Nov 15):**
+- Demo (7-slide deck): https://vita-quakernauts.vercel.app/vita-demo-deck.pdf
+- Final project (live app): https://vita-quakernauts.vercel.app
 
 ---
 
@@ -15,8 +17,8 @@ Fill in everything in `[BRACKETS]` before pasting.
 |---|---|---|---|
 | 1 | Message the Philadelphia Local Lead about pre-event prototyping (draft in section 9) and follow their answer | Team owner | ☐ |
 | 2 | Every member registered for the **Philadelphia** Local Event (not waitlisted) and listed on the team page | Each member | ☐ |
-| 3 | Publish the app at a public URL (section 8) and test it in a private window | Engineer | ☐ |
-| 4 | Upload `VITA-demo-deck.pdf` (or the 30 s video) to Google Drive / YouTube, set **Anyone with the link**, test logged out | Storyteller | ☐ |
+| 3 | App published at https://vita-quakernauts.vercel.app and tested logged out | Done | ☑ |
+| 4 | Deck PDF public at https://vita-quakernauts.vercel.app/vita-demo-deck.pdf | Done | ☑ |
 | 5 | Team and member names on the deck; PDF re-exported (7 pages) | Done | ☑ |
 | 6 | Nobody under 18 appears or is heard (unmodified) in the demo | Storyteller | ☐ |
 | 7 | Tick both boxes on the form (Terms; original work with all resources referenced), then **Submit for Judging** and see the green banner | Team owner | ☐ |
@@ -33,13 +35,15 @@ Fill in everything in `[BRACKETS]` before pasting.
 
 ## 3. Link to Project Demo
 
-`[PUBLIC LINK TO VITA-demo-deck.pdf ON GOOGLE DRIVE]`, or `[PUBLIC YOUTUBE LINK TO 30-SECOND VIDEO]`. Provide **only one**.
+https://vita-quakernauts.vercel.app/vita-demo-deck.pdf  (provide only this one; don't also add a video)
 - Deck: `submission/VITA-demo-deck.pdf` (7 slides including the title slide; within the limit).
 - Video: script in `submission/VIDEO_SCRIPT.md` (must be 30 seconds or less).
 
 ## 4. Link to Final Project
 
-`[PUBLIC URL OF THE DEPLOYED APP]`. Optionally also the source: `[PUBLIC GITHUB REPO URL]`. See section 8.
+https://vita-quakernauts.vercel.app
+
+Source code: the GitHub repo is private. Add its link here only if the team makes it public.
 
 ## 5. Detailed Project Description
 
@@ -66,7 +70,7 @@ VITA is a web app (works on desktop and phones, installable like an app) with tw
 
 **What we hope to achieve.** A blueprint for Earth-independent medical operations on Artemis and Mars missions, and a tool for places on Earth where help is far away: Antarctic stations, submarines, ships and rural clinics.
 
-**Development timeline (disclosure).** `[Keep or edit after hearing from the Local Lead]` Our team prototyped the core of VITA in the week before the event (git history from November 9, 2026), while learning the tools and NASA data. On November 12 we added NASA 3D models, Mars Trek terrain and the SDO and SPDF space-weather feeds. During the hackathon (November 14–15) we added the onboard pharmacy with medication-safety checks, the private wellbeing check-in with consent controls, per-astronaut medical profiles that change warning ranges, the requirements-coverage page, a medication tool for the AI copilot, and the demo deck. The full commit history is available in our repository (shared on request).
+**Development timeline (disclosure).** Our team prototyped the core of VITA in the week before the event (git history from November 9, 2026), while learning the tools and NASA data. On November 12 we added NASA 3D models, Mars Trek terrain and the SDO and SPDF space-weather feeds. During the hackathon (November 14–15) we added the onboard pharmacy with medication-safety checks, the private wellbeing check-in with consent controls, per-astronaut medical profiles that change warning ranges, the requirements-coverage page, a medication tool for the AI copilot, and the demo deck. The full commit history is available in our repository (shared on request).
 
 **Limits.** Not a medical device. Day-to-day in-flight vitals are simulated on top of the real baselines, because individual astronauts' in-flight data are not publicly released. The medication rule set is illustrative, not clinical.
 

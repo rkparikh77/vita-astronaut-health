@@ -8,6 +8,7 @@ Team **Quakernauts**: Rahil Parikh, Lana Atiya, Jahnavi Prudhivi, Cynthia Zhang,
 **Final links (tested logged out, Nov 15):**
 - Demo (7-slide deck): https://vita-quakernauts.vercel.app/vita-demo-deck.pdf
 - Final project (live app): https://vita-quakernauts.vercel.app
+- Source code: https://github.com/rkparikh77/vita-astronaut-health
 
 ---
 
@@ -43,7 +44,7 @@ https://vita-quakernauts.vercel.app/vita-demo-deck.pdf  (provide only this one; 
 
 https://vita-quakernauts.vercel.app
 
-Source code: the GitHub repo is private. Add its link here only if the team makes it public.
+Source code (public): https://github.com/rkparikh77/vita-astronaut-health
 
 ## 5. Detailed Project Description
 
@@ -70,7 +71,7 @@ VITA is a web app (works on desktop and phones, installable like an app) with tw
 
 **What we hope to achieve.** A blueprint for Earth-independent medical operations on Artemis and Mars missions, and a tool for places on Earth where help is far away: Antarctic stations, submarines, ships and rural clinics.
 
-**Development timeline (disclosure).** Our team prototyped the core of VITA in the week before the event (git history from November 9, 2026), while learning the tools and NASA data. On November 12 we added NASA 3D models, Mars Trek terrain and the SDO and SPDF space-weather feeds. During the hackathon (November 14–15) we added the onboard pharmacy with medication-safety checks, the private wellbeing check-in with consent controls, per-astronaut medical profiles that change warning ranges, the requirements-coverage page, a medication tool for the AI copilot, and the demo deck. The full commit history is available in our repository (shared on request).
+**Development timeline (disclosure).** Our team prototyped the core of VITA in the week before the event (git history from November 9, 2026), while learning the tools and NASA data. On November 12 we added NASA 3D models, Mars Trek terrain and the SDO and SPDF space-weather feeds. During the hackathon (November 14–15) we added the onboard pharmacy with medication-safety checks, the private wellbeing check-in with consent controls, per-astronaut medical profiles that change warning ranges, the requirements-coverage page, a medication tool for the AI copilot, and the demo deck. The full commit history is public: https://github.com/rkparikh77/vita-astronaut-health/commits/main
 
 **Limits.** Not a medical device. Day-to-day in-flight vitals are simulated on top of the real baselines, because individual astronauts' in-flight data are not publicly released. The medication rule set is illustrative, not clinical.
 

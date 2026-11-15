@@ -3,6 +3,8 @@
 Deadline: **Sunday, November 15, 2026, 11:59 PM Eastern (Philadelphia).** Aim to click **Submit for Judging** by 8:00 PM.
 Where: spaceappschallenge.org → profile icon → **My Team** → **Project** tab → **Edit**. Save often (Save Progress). Turn the edit **Lock** on while editing.
 
+Team **Quakernauts**: Rahil Parikh, Lana Atiya, Jahnavi Prudhivi, Cynthia Zhang, Joshua Wu.
+
 Fill in everything in `[BRACKETS]` before pasting.
 
 ---
@@ -15,7 +17,7 @@ Fill in everything in `[BRACKETS]` before pasting.
 | 2 | Every member registered for the **Philadelphia** Local Event (not waitlisted) and listed on the team page | Each member | ☐ |
 | 3 | Publish the app at a public URL (section 8) and test it in a private window | Engineer | ☐ |
 | 4 | Upload `VITA-demo-deck.pdf` (or the 30 s video) to Google Drive / YouTube, set **Anyone with the link**, test logged out | Storyteller | ☐ |
-| 5 | Replace `[TEAM NAME]` and member names in `submission/deck/deck.html`, run `sh submission/export-deck.sh`, and fill the brackets below | Anyone | ☐ |
+| 5 | Team and member names on the deck; PDF re-exported (7 pages) | Done | ☑ |
 | 6 | Nobody under 18 appears or is heard (unmodified) in the demo | Storyteller | ☐ |
 | 7 | Tick both boxes on the form (Terms; original work with all resources referenced), then **Submit for Judging** and see the green banner | Team owner | ☐ |
 
@@ -64,7 +66,7 @@ VITA is a web app (works on desktop and phones, installable like an app) with tw
 
 **What we hope to achieve.** A blueprint for Earth-independent medical operations on Artemis and Mars missions, and a tool for places on Earth where help is far away: Antarctic stations, submarines, ships and rural clinics.
 
-**Development timeline (disclosure).** `[Keep or edit after hearing from the Local Lead]` Our team prototyped the core of VITA in the week before the event (git history from November 9, 2026), while learning the tools and NASA data. On November 12 we added NASA 3D models, Mars Trek terrain and the SDO and SPDF space-weather feeds. During the hackathon (November 14–15) we added the onboard pharmacy with medication-safety checks, the private wellbeing check-in with consent controls, per-astronaut medical profiles that change warning ranges, the requirements-coverage page, a medication tool for the AI copilot, and the demo deck. The full commit history is public in the repository.
+**Development timeline (disclosure).** `[Keep or edit after hearing from the Local Lead]` Our team prototyped the core of VITA in the week before the event (git history from November 9, 2026), while learning the tools and NASA data. On November 12 we added NASA 3D models, Mars Trek terrain and the SDO and SPDF space-weather feeds. During the hackathon (November 14–15) we added the onboard pharmacy with medication-safety checks, the private wellbeing check-in with consent controls, per-astronaut medical profiles that change warning ranges, the requirements-coverage page, a medication tool for the AI copilot, and the demo deck. The full commit history is available in our repository (shared on request).
 
 **Limits.** Not a medical device. Day-to-day in-flight vitals are simulated on top of the real baselines, because individual astronauts' in-flight data are not publicly released. The medication rule set is illustrative, not clinical.
 
@@ -91,7 +93,7 @@ VITA is a web app (works on desktop and phones, installable like an app) with tw
 
 ## 8. Space Agency Partner Data and Other References
 
-**Partner data:** `[none used; optional]`
+**Partner data:** None used.
 
 **Open-source software:** Next.js 15.5, React 19.1, Tailwind CSS 4, Three.js 0.171, @react-three/fiber 9, @react-three/drei 10, Recharts 2.15, lucide-react, Zod 3, qrcode, Vitest, tsx, @anthropic-ai/sdk. Fonts: Big Shoulders, Inter and JetBrains Mono (Google Fonts, SIL Open Font License).
 
@@ -133,4 +135,4 @@ Optional: request a FortiGuard web-filter classification for the deployed URL so
 
 ## 9. Message to the Philadelphia Local Lead (send on Slack `#questions` or by email)
 
-> Hi! Our team (`[TEAM NAME]`, Create Health Monitoring Software for Astronauts on Space Missions) wanted to be upfront: we started prototyping our project, VITA, in the week before the event while learning the tools and NASA datasets. During the hackathon we've built on it substantially (onboard pharmacy and medication-safety checks, private wellbeing check-ins, personalized medical profiles, a requirements-coverage page). Our full commit history is available. Is it OK to submit, and is there anything you'd like us to note or change in the submission? Thank you!
+> Hi! Our team (Quakernauts, Create Health Monitoring Software for Astronauts on Space Missions) wanted to be upfront: we started prototyping our project, VITA, in the week before the event while learning the tools and NASA datasets. During the hackathon we've built on it substantially (onboard pharmacy and medication-safety checks, private wellbeing check-ins, personalized medical profiles, a requirements-coverage page). Our full commit history is available. Is it OK to submit, and is there anything you'd like us to note or change in the submission? Thank you!

@@ -5,7 +5,7 @@ import { MISSION } from "@/core/crew";
 import { ENV_MAP } from "@/core/environments";
 import { fetchSpaceWeather } from "@/lib/spaceWeather";
 
-export const maxDuration = 120;
+export const maxDuration = 60;
 
 const MODEL = "claude-opus-5-5";
 const MAX_TOOL_ROUNDS = 8;
